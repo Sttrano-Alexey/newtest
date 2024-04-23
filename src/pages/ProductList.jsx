@@ -23,7 +23,7 @@ const ProductList = () => {
       // Если все элементы уже показаны, переключите состояние showAll
       setShowAll(true);
     } else {
-      setVisibleProducts((prevVisibleProducts) => prevVisibleProducts + 6);
+      setVisibleProducts((prevVisibleProducts) => prevVisibleProducts + 5);
     }
   };
 
