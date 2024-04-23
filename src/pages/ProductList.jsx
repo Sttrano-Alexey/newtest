@@ -10,7 +10,7 @@ const ProductList = () => {
   const [showAll, setShowAll] = useState(false); // Состояние для отслеживания показа всех элементов
 
   useEffect(() => {
-    fetch("https://newtestdb.vercel.app/DATA/products.json")
+    fetch("https://${process.env.NEXT_PUBLIC_VERCEL_URL}/DATA/products.json")
       .then((res) => res.json())
       .then((products) => setProducts(products))
       .catch((error) => {
