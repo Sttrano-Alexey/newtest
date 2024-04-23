@@ -1,9 +1,2 @@
 { "rewrites": [{ "source": "/(.*)", "destination": "/" }] },
-{
-  "builds": [
-    {
-      "src": "src/DATA/**",
-      "use": "@vercel/static-build"
-    }
-  ]
-}
+{"builds": [{"src": "src/DATA/**","use": "@vercel/static-build"}]}
